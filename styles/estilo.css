@@ -2,8 +2,7 @@
 
 	color: white;
 	text-align: center;
-	font-size: 45px;
-	background-image: linear-gradient(rgb(214, 182, 136), rgb(211, 200, 180));
+	font-size: 45px;	
 	margin: 0px;
 	font-family: georgia;
 }
@@ -19,20 +18,13 @@ a:hover {
 	color: rgb(255, 255, 255);
 }
 
-
-
-nav {
-	background-color: white;
-	text-align: center;
-	border: 5px solid
-}
-
 nav ul {
 
 	list-style: none;
 	display: inline-block;
-	padding: 20px;
-	margin-top: 10px;
+	padding: 40px;
+	margin: 25px;
+	margin-top: 0px;
 	/*background-color: rgb(92, 92, 92);*/
 
 
@@ -40,14 +32,13 @@ nav ul {
 
 nav ul li {
 
-	float: left;
+	float: center;
 	border: rgb(215, 201, 183) 5px solid;
 	background-color: rgb(207, 188, 152);
-	margin-right: 10px;
-	padding: 0 4px;
+	margin-left: 50px;
+	padding: 0 10px;
 	border-radius: 10px;
-	transition: 1s;
-
+	transition: .5s;
 }
 
 nav ul li:hover {
@@ -61,13 +52,19 @@ nav ul li a {
 	color: rgb(0, 0, 0);
 	font-size: 30px;
 	padding: 18px;
-	font-weight: 100;
 }
 
 h2 {
 
 	text-align: center;
 	font-size: 40px;
+
+}
+
+p {
+
+	background-color: grey;
+	margin-bottom: 40px;
 
 }
 
@@ -144,26 +141,40 @@ header {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	color: #FFF;
-	border: 7px solid rgb(105, 105, 105);
 }
 
 .h1header {
 	width: 100%;
 	text-align: center;
-	background-color: rgb(175, 67, 43);
+	/*background-image: linear-gradient(rgb(214, 182, 136), rgb(211, 200, 180));*/
+}
+
+.h1header img{
+
+	display: flex;
+	flex-direction: center;
+	margin-left: 120px;
+	margin-top: 40px;
+	
 }
 
 .h1header h1 {
 	font-size: 35px;
 	font-family: georgia;
+	color: black;
+	position: relative;
+	top: 70px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 nav {
-	width: 90%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
+	width: 70%;
+	height: 40%;
+	position: relative;
+	bottom: 140px;
+	left: 120px;
+	background-image: linear-gradient(rgb(214, 182, 136), rgba(211, 200, 180, 0.719));
+	
 }
 
 nav ul {
@@ -172,7 +183,7 @@ nav ul {
 	height: 30%;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: center
 
 }
 
@@ -215,6 +226,7 @@ li a:hover {
 	align-items: center;
 	background-color: rgb(32, 32, 32);
 	color: #FFF;
+	margin-bottom: 100px;
 }
 
 .destacados {
@@ -222,16 +234,24 @@ li a:hover {
 	width: 100%;
 	justify-content: space-evenly;
 	align-self: center;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 footer {
 	grid-area: footer;
 	display: flex;
-	width: 100%;
+	width: 120%;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
+}
+
+span{
+	
+	position: relative;
+	right: 400px;
+	top: 20px;
+
 }
 
 /* INICIO ESTILOS MIS DATOS */
@@ -377,3 +397,27 @@ input:invalid {
 
 
 /* FIN ESTILOS SOBRE NOSOTROS */
+
+/*MEDIA QUERY*/
+
+@media only screen and (max-width:768px) {
+    .contenedorGrid {
+        grid-template-areas:
+            "header"
+            "nuestraPagina"
+            "tabla"
+            "hotelesDestacados"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr 0.2fr;
+    }
+	
+	footer{
+        width: 120%;
+        padding: 0%;
+        min-height: 200px;
+    }
+
+	
+
+}
