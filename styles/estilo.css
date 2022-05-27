@@ -1,423 +1,451 @@
+/* line 4, ../../../../../Desktop/Desarrollo Web/scss/_colores.scss */
 .titulo {
-
-	color: white;
-	text-align: center;
-	font-size: 45px;	
-	margin: 0px;
-	font-family: georgia;
+  color: white;
 }
 
+/* line 10, ../../../../../Desktop/Desarrollo Web/scss/_colores.scss */
 a {
-	color: rgb(0, 0, 0);
-	text-decoration: none;
+  color: black;
 }
 
-
+/* line 17, ../../../../../Desktop/Desarrollo Web/scss/_colores.scss */
 a:hover {
-
-	color: rgb(255, 255, 255);
+  color: white;
 }
 
-nav ul {
-
-	list-style: none;
-	display: inline-block;
-	padding: 40px;
-	margin: 25px;
-	margin-top: 0px;
-	/*background-color: rgb(92, 92, 92);*/
-
-
-}
-
-nav ul li {
-
-	float: center;
-	border: rgb(215, 201, 183) 5px solid;
-	background-color: rgb(207, 188, 152);
-	margin-left: 50px;
-	padding: 0 10px;
-	border-radius: 10px;
-	transition: .5s;
-}
-
-nav ul li:hover {
-
-	transform: scale(1.3);
-
-}
-
+/* line 23, ../../../../../Desktop/Desarrollo Web/scss/_colores.scss */
 nav ul li a {
-	font-family: 'Roboto', sans-serif;
-	color: rgb(0, 0, 0);
-	font-size: 30px;
-	padding: 18px;
+  color: black;
 }
 
-h2 {
-
-	text-align: center;
-	font-size: 40px;
-
-}
-
+/* line 27, ../../../../../Desktop/Desarrollo Web/scss/_colores.scss */
 p {
-
-	background-color: grey;
-	margin-bottom: 40px;
-
+  background-color: grey;
 }
 
-button {
-
-	font-size: 20px;
-
-}
-
-.logosredes {
-	text-align: center;
-}
-
-.logosredes img {
-
-	position: relative;
-}
-
-.logosredes a {
-	margin: 0 40px;
-}
-
-.centerbody {
-	text-align: center;
-}
-
-.tabla {
-	display: inline-block;
-	text-align: center;
-
-
-}
-
-.nuestra_pagina {
-	text-align: center;
-}
-
-.destacados img {
-
-	padding: 10px;
-	transition: all .5s;
-	filter: grayscale(100%);
-
-}
-
-.destacados img:hover {
-
-	filter: grayscale(0);
-	transform: scale(1.2);
-
-}
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
-.contenedorGrid {
-	display: grid;
-	grid-template-areas:
-		"header header"
-		"nuestraPagina tabla"
-		"hotelesDestacados hotelesDestacados"
-		"footer footer";
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 0.4fr 1fr 1fr 0.3fr;
-	width: 100vw;
-	height: 100vh;
-}
-
-header {
-	grid-area: header;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.h1header {
-	width: 100%;
-	text-align: center;
-	/*background-image: linear-gradient(rgb(214, 182, 136), rgb(211, 200, 180));*/
-}
-
-.h1header img{
-
-	display: flex;
-	flex-direction: center;
-	margin-left: 120px;
-	margin-top: 40px;
-	
-}
-
+/* line 33, ../../../../../Desktop/Desarrollo Web/scss/_colores.scss */
 .h1header h1 {
-	font-size: 35px;
-	font-family: georgia;
-	color: black;
-	position: relative;
-	top: 70px;
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
 }
 
+/* line 39, ../../../../../Desktop/Desarrollo Web/scss/_colores.scss */
 nav {
-	width: 70%;
-	height: 40%;
-	position: relative;
-	bottom: 140px;
-	left: 120px;
-	background-image: linear-gradient(rgb(214, 182, 136), rgba(211, 200, 180, 0.719));
-	
+  background-image: linear-gradient(#d6b688, rgba(211, 200, 180, 0.719));
 }
 
-nav ul {
-	list-style: none;
-	width: 80%;
-	height: 30%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center
-
-}
-
+/* line 47, ../../../../../Desktop/Desarrollo Web/scss/_colores.scss */
 li a {
-	color: #FFF;
-	text-decoration: none;
-	font-family: 'Roboto', sans-serif;
-	font-size: 24px;
-	font-weight: 100;
-
+  color: white;
 }
 
+/* line 50, ../../../../../Desktop/Desarrollo Web/scss/_colores.scss */
 li a:hover {
-	color: white;
-
+  color: white;
 }
 
-.contNuestraPagina {
-	padding: 0 5%;
-	grid-area: nuestraPagina;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.tabla {
-	grid-area: tabla;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0 5%;
-}
-
+/* line 61, ../../../../../Desktop/Desarrollo Web/scss/_colores.scss */
 .hotelesDestacados {
-	grid-area: hotelesDestacados;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: rgb(32, 32, 32);
-	color: #FFF;
-	margin-bottom: 100px;
+  background-color: #202020;
+  color: white;
 }
 
-.destacados {
-	display: flex;
-	width: 100%;
-	justify-content: space-evenly;
-	align-self: center;
-	margin-top: 40px;
-}
-
-footer {
-	grid-area: footer;
-	display: flex;
-	width: 120%;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
-span{
-	
-	position: relative;
-	right: 400px;
-	top: 20px;
-
-}
-
-/* INICIO ESTILOS MIS DATOS */
-
-.contMisDatos {
-	display: grid;
-	width: 100vw;
-	height: 100vh;
-	grid-template-areas:
-		"header"
-		"datosPersonales"
-		"footer";
-	grid-template-columns: 1fr;
-	grid-template-rows: 0.4fr 2fr 0.3fr;
-}
-
-.datosPersonales {
-	grid-area: datosPersonales;
-	width: 80%;
-	justify-self: center;
-}
-
-.datosPersonales form fieldset {
-	width: 100%;
-}
-
-/* FIN ESTILOS MIS DATOS */
-
-/* INICIO ESTILOS MI CUENTA */
-
-.contMiCuenta {
-	display: grid;
-	width: 100vw;
-	height: 100vh;
-	grid-template-areas:
-		"header"
-		"cuenta"
-		"footer";
-	grid-template-columns: 1fr;
-	grid-template-rows: 0.4fr 2fr 0.3fr;
-}
-
-fieldset {
-	align-self: center;
-	justify-self: center;
-	display: flex;
-	flex-direction: column;
-	width: 80%;
-	height: 45%;
-	align-items: center;
-}
-
-fieldset div {
-	height: 100px;
-	width: 80%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-}
-
-fieldset div label {
-	font-size: 25px;
-	margin: 10px 0;
-}
-
-fieldset div input {
-	height: 80%;
-	width: 90%;
-}
-
-fieldset button {
-	height: 35px;
-	width: 100px;
-	margin-top: 20px;
-}
-
-
-/* FIN ESTILOS MI CUENTA */
-
-/* INICIO ESTILOS MIS RESERVAS */
-
-.contMisReservas {
-	display: grid;
-	width: 100vw;
-	height: 100vh;
-	grid-template-areas:
-		"header"
-		"reservas"
-		"footer";
-	grid-template-columns: 1fr;
-	grid-template-rows: 0.4fr 2fr 0.3fr;
-}
-
-.reservas {
-	grid-area: reservas;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
-/* FIN ESTILOS MIS RESERVAS */
-
-/* INICIO ESTILOS SOBRE NOSOTROS */
-
-.contSobreNosotros {
-	display: grid;
-	width: 100vw;
-	height: 100vh;
-	grid-template-areas:
-		"header"
-		"sobreNosotros"
-		"footer";
-	grid-template-columns: 1fr;
-	grid-template-rows: 0.4fr 2fr 0.3fr;
-}
-
-.sobreNosotros {
-	grid-area: sobreNosotros;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-input {
-
-	transition: 2s;
-
-}
-
+/* line 68, ../../../../../Desktop/Desarrollo Web/scss/_colores.scss */
 input:invalid {
-
-	border: 2px solid red;
-
+  border: 2px solid red;
 }
 
-
-
-/* FIN ESTILOS SOBRE NOSOTROS */
-
-/*MEDIA QUERY*/
-
-@media only screen and (max-width:768px) {
-    .contenedorGrid {
-        grid-template-areas:
-            "header"
-            "nuestraPagina"
-            "tabla"
-            "hotelesDestacados"
-            "footer";
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr 0.2fr;
-    }
-	
-	footer{
-        width: 120%;
-        padding: 0%;
-        min-height: 200px;
-    }
-
-	
-
+/* line 1, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+* {
+  margin: 0;
+  padding: 0;
 }
+
+/* line 7, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.titulo {
+  text-align: center;
+  font-size: 45px;
+  margin: 0px;
+  font-family: georgia;
+}
+
+/* line 14, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 20, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+nav ul {
+  list-style: none;
+  display: inline-block;
+  padding: 40px;
+  margin: 25px;
+  margin-top: 0px;
+  /*background-color: rgb(92, 92, 92);*/
+}
+
+/* line 29, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+nav ul li {
+  float: center;
+  border: #d7c9b7 5px solid;
+  background-color: #cfbc98;
+  margin-left: 80px;
+  padding: 0 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* line 41, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+nav ul a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  padding: 18px;
+}
+
+/* line 54, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+/* line 61, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+p {
+  margin-bottom: 40px;
+}
+
+/* line 67, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+button {
+  font-size: 20px;
+}
+
+/* line 73, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.logosredes {
+  text-align: center;
+}
+
+/* line 77, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.logosredes img {
+  position: relative;
+}
+
+/* line 82, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.logosredes a {
+  margin: 0 40px;
+}
+
+/* line 86, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.centerbody {
+  text-align: center;
+}
+
+/* line 90, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.tabla {
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 95, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.nuestra_pagina {
+  text-align: center;
+}
+
+/* line 99, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.destacados img {
+  padding: 10px;
+}
+
+/* line 105, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.contenedorGrid {
+  display: grid;
+  grid-template-areas: "header header"
+    "nuestraPagina tabla"
+    "hotelesDestacados hotelesDestacados"
+    "footer footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 1fr 1fr 0.3fr;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 118, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 126, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.h1header {
+  width: 100%;
+  text-align: center;
+  /*background-image: linear-gradient(rgb(214, 182, 136), rgb(211, 200, 180));*/
+}
+
+/* line 132, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.h1header img {
+  display: flex;
+  flex-direction: center;
+  margin-left: 120px;
+  margin-top: 40px;
+}
+
+/* line 141, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.h1header h1 {
+  font-size: 35px;
+  font-family: georgia;
+  position: relative;
+  top: 70px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* line 149, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+nav {
+  width: 70%;
+  height: 40%;
+  position: relative;
+  bottom: 140px;
+  left: 120px;
+}
+
+/* line 156, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+nav li {
+  list-style: none;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 165, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+nav a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+/* line 177, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.contNuestraPagina {
+  padding: 0 5%;
+  grid-area: nuestraPagina;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 186, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.tabla {
+  grid-area: tabla;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+
+/* line 194, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.hotelesDestacados {
+  grid-area: hotelesDestacados;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+/* line 203, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.destacados {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-self: center;
+  margin-top: 40px;
+}
+
+/* line 211, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+footer {
+  grid-area: footer;
+  display: flex;
+  width: 120%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* line 220, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+span {
+  position: relative;
+  right: 400px;
+  top: 20px;
+}
+
+/* line 228, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.contMisDatos {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas: "header"
+    "datosPersonales"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 2fr 0.3fr;
+}
+
+/* line 240, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.datosPersonales {
+  grid-area: datosPersonales;
+  width: 80%;
+  justify-self: center;
+}
+
+/* line 246, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.datosPersonales form fieldset {
+  width: 100%;
+}
+
+/* line 250, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.contMiCuenta {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas: "header"
+    "cuenta"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 2fr 0.3fr;
+}
+
+/* line 262, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+fieldset {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 45%;
+  align-items: center;
+}
+
+/* line 272, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+fieldset div {
+  height: 100px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 281, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+fieldset div label {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+/* line 286, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+fieldset div input {
+  height: 80%;
+  width: 90%;
+}
+
+/* line 291, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+fieldset button {
+  height: 35px;
+  width: 100px;
+  margin-top: 20px;
+}
+
+/* line 297, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.contMisReservas {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas: "header"
+    "reservas"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 2fr 0.3fr;
+}
+
+/* line 309, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.reservas {
+  grid-area: reservas;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* line 319, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.contSobreNosotros {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas: "header"
+    "sobreNosotros"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 2fr 0.3fr;
+}
+
+/* line 331, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+.sobreNosotros {
+  grid-area: sobreNosotros;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* line 2, ../../../../../Desktop/Desarrollo Web/scss/_responsive.scss */
+  .contenedorGrid {
+    grid-template-areas: "header"
+      "nuestraPagina"
+      "tabla"
+      "hotelesDestacados"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr 0.2fr;
+  }
+
+  /* line 13, ../../../../../Desktop/Desarrollo Web/scss/_responsive.scss */
+  footer {
+    width: 120%;
+    padding: 0%;
+    min-height: 200px;
+  }
+}
+
+/* line 5, ../../../../../Desktop/Desarrollo Web/scss/_animaciones.scss */
+nav ul li {
+  transition: .5s;
+}
+
+/* line 9, ../../../../../Desktop/Desarrollo Web/scss/_animaciones.scss */
+nav ul li:hover {
+  transform: scale(1.3);
+}
+
+/* line 22, ../../../../../Desktop/Desarrollo Web/scss/_animaciones.scss */
+.destacados img {
+  transition: all .5s;
+  filter: grayscale(100%);
+}
+
+/* line 29, ../../../../../Desktop/Desarrollo Web/scss/_animaciones.scss */
+.destacados img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+
+/* line 36, ../../../../../Desktop/Desarrollo Web/scss/_animaciones.scss */
+input {
+  transition: 2s;
+}
+
+/*# sourceMappingURL=estilo.css.map */

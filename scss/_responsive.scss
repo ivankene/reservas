@@ -1,0 +1,21 @@
+@media only screen and (max-width:768px) {
+    .contenedorGrid {
+        grid-template-areas:
+            "header"
+            "nuestraPagina"
+            "tabla"
+            "hotelesDestacados"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr 0.2fr;
+    }
+
+    footer {
+        width: 120%;
+        padding: 0%;
+        min-height: 200px;
+    }
+
+
+
+}

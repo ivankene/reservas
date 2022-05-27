@@ -1,0 +1,72 @@
+$color: white;
+$color2: black;
+
+.titulo {
+
+    color: $color;
+
+}
+
+a {
+    color: $color2;
+
+}
+
+a {
+
+    &:hover {
+
+        color: $color;
+    }
+}
+
+nav ul li a {
+    color: $color2;
+}
+
+p {
+
+    background-color: grey;
+
+}
+
+.h1header h1 {
+
+    color: $color2;
+
+}
+
+nav {
+
+    background-image: linear-gradient(rgb(214, 182, 136), rgba(211, 200, 180, 0.719));
+
+}
+
+li {
+
+    a {
+        color: $color;
+
+        &:hover {
+
+            color: $color;
+
+        }
+
+    }
+
+
+}
+
+.hotelesDestacados {
+
+    background-color: rgb(32, 32, 32);
+    color: $color;
+
+}
+
+input:invalid {
+
+    border: 2px solid red;
+
+}

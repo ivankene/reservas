@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.titulo {
+    text-align: center;
+    font-size: 45px;
+    margin: 0px;
+    font-family: georgia;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+
+    ul {
+
+        list-style: none;
+        display: inline-block;
+        padding: 40px;
+        margin: 25px;
+        margin-top: 0px;
+        /*background-color: rgb(92, 92, 92);*/
+
+        li {
+
+            float: center;
+            border: rgb(215, 201, 183) 5px solid;
+            background-color: rgb(207, 188, 152);
+            margin-left: 80px;
+            padding: 0 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+
+        }
+
+        a {
+
+            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+            padding: 18px;
+
+        }
+
+
+    }
+
+}
+
+h2 {
+
+    text-align: center;
+    font-size: 40px;
+
+}
+
+p {
+
+    margin-bottom: 40px;
+
+}
+
+button {
+
+    font-size: 20px;
+
+}
+
+.logosredes {
+    text-align: center;
+}
+
+.logosredes img {
+
+    position: relative;
+}
+
+.logosredes a {
+    margin: 0 40px;
+}
+
+.centerbody {
+    text-align: center;
+}
+
+.tabla {
+    display: inline-block;
+    text-align: center;
+}
+
+.nuestra_pagina {
+    text-align: center;
+}
+
+.destacados img {
+
+    padding: 10px;
+
+}
+
+.contenedorGrid {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nuestraPagina tabla"
+        "hotelesDestacados hotelesDestacados"
+        "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr 1fr 0.3fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h1header {
+    width: 100%;
+    text-align: center;
+    /*background-image: linear-gradient(rgb(214, 182, 136), rgb(211, 200, 180));*/
+}
+
+.h1header img {
+
+    display: flex;
+    flex-direction: center;
+    margin-left: 120px;
+    margin-top: 40px;
+
+}
+
+.h1header h1 {
+    font-size: 35px;
+    font-family: georgia;
+    position: relative;
+    top: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    width: 70%;
+    height: 40%;
+    position: relative;
+    bottom: 140px;
+    left: 120px;
+
+    li {
+
+        list-style: none;
+        height: 30%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    a {
+
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        font-weight: 100;
+
+    }
+
+}
+
+
+.contNuestraPagina {
+    padding: 0 5%;
+    grid-area: nuestraPagina;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabla {
+    grid-area: tabla;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.hotelesDestacados {
+    grid-area: hotelesDestacados;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.destacados {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-self: center;
+    margin-top: 40px;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    width: 120%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+span {
+
+    position: relative;
+    right: 400px;
+    top: 20px;
+
+}
+
+.contMisDatos {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+        "header"
+        "datosPersonales"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2fr 0.3fr;
+}
+
+.datosPersonales {
+    grid-area: datosPersonales;
+    width: 80%;
+    justify-self: center;
+}
+
+.datosPersonales form fieldset {
+    width: 100%;
+}
+
+.contMiCuenta {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+        "header"
+        "cuenta"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2fr 0.3fr;
+}
+
+fieldset {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 45%;
+    align-items: center;
+}
+
+fieldset div {
+    height: 100px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+fieldset div label {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+fieldset div input {
+    height: 80%;
+    width: 90%;
+}
+
+fieldset button {
+    height: 35px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.contMisReservas {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+        "header"
+        "reservas"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2fr 0.3fr;
+}
+
+.reservas {
+    grid-area: reservas;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contSobreNosotros {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+        "header"
+        "sobreNosotros"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2fr 0.3fr;
+}
+
+.sobreNosotros {
+    grid-area: sobreNosotros;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
