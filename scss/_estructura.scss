@@ -123,6 +123,20 @@ header {
     justify-content: space-between;
 }
 
+header .navbar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .navbar .navbar-nav{
+
+    display: flex;
+    list-style: none;
+
+}
 
 .h1header {
     width: 100%;

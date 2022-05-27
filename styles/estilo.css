@@ -140,20 +140,31 @@ header {
   align-items: center;
   justify-content: space-between; }
 
-/* line 127, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 126, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+header .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 134, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+header .navbar .navbar-nav {
+  display: flex;
+  list-style: none; }
+
+/* line 141, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .h1header {
   width: 100%;
   text-align: center;
   /*background-image: linear-gradient(rgb(214, 182, 136), rgb(211, 200, 180));*/ }
 
-/* line 133, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 147, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .h1header img {
   display: flex;
   flex-direction: center;
   margin-left: 120px;
   margin-top: 40px; }
 
-/* line 142, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 156, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .h1header h1 {
   font-size: 35px;
   font-family: georgia;
@@ -161,27 +172,27 @@ header {
   top: 70px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
-/* line 150, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 164, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 nav {
   width: 70%;
   height: 40%;
   position: relative;
   bottom: 140px;
   left: 120px; }
-  /* line 157, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+  /* line 171, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
   nav li {
     list-style: none;
     height: 30%;
     display: flex;
     justify-content: space-between; }
-  /* line 166, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+  /* line 180, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
   nav a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 100; }
 
-/* line 178, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 192, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .contNuestraPagina {
   padding: 0 5%;
   grid-area: nuestraPagina;
@@ -190,7 +201,7 @@ nav {
   justify-content: center;
   align-items: center; }
 
-/* line 187, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 201, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .tabla {
   grid-area: tabla;
   display: flex;
@@ -198,7 +209,7 @@ nav {
   align-items: center;
   padding: 0 5%; }
 
-/* line 195, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 209, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .hotelesDestacados {
   grid-area: hotelesDestacados;
   display: flex;
@@ -207,7 +218,7 @@ nav {
   align-items: center;
   margin-bottom: 100px; }
 
-/* line 204, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 218, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .destacados {
   display: flex;
   width: 100%;
@@ -215,7 +226,7 @@ nav {
   align-self: center;
   margin-top: 40px; }
 
-/* line 212, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 226, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 footer {
   grid-area: footer;
   display: flex;
@@ -224,13 +235,13 @@ footer {
   justify-content: space-evenly;
   align-items: center; }
 
-/* line 221, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 235, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 span {
   position: relative;
   right: 400px;
   top: 20px; }
 
-/* line 229, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 243, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .contMisDatos {
   display: grid;
   width: 100vw;
@@ -239,17 +250,17 @@ span {
   grid-template-columns: 1fr;
   grid-template-rows: 0.4fr 2fr 0.3fr; }
 
-/* line 241, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 255, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .datosPersonales {
   grid-area: datosPersonales;
   width: 80%;
   justify-self: center; }
 
-/* line 247, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 261, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .datosPersonales form fieldset {
   width: 100%; }
 
-/* line 251, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 265, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .contMiCuenta {
   display: grid;
   width: 100vw;
@@ -258,7 +269,7 @@ span {
   grid-template-columns: 1fr;
   grid-template-rows: 0.4fr 2fr 0.3fr; }
 
-/* line 263, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 277, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 fieldset {
   align-self: center;
   justify-self: center;
@@ -268,7 +279,7 @@ fieldset {
   height: 45%;
   align-items: center; }
 
-/* line 273, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 287, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 fieldset div {
   height: 100px;
   width: 80%;
@@ -276,23 +287,23 @@ fieldset div {
   flex-direction: column;
   justify-content: center; }
 
-/* line 282, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 296, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 fieldset div label {
   font-size: 25px;
   margin: 10px 0; }
 
-/* line 287, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 301, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 fieldset div input {
   height: 80%;
   width: 90%; }
 
-/* line 292, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 306, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 fieldset button {
   height: 35px;
   width: 100px;
   margin-top: 20px; }
 
-/* line 298, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 312, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .contMisReservas {
   display: grid;
   width: 100vw;
@@ -301,7 +312,7 @@ fieldset button {
   grid-template-columns: 1fr;
   grid-template-rows: 0.4fr 2fr 0.3fr; }
 
-/* line 310, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 324, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .reservas {
   grid-area: reservas;
   width: 100%;
@@ -311,7 +322,7 @@ fieldset button {
   justify-content: space-evenly;
   align-items: center; }
 
-/* line 320, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 334, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .contSobreNosotros {
   display: grid;
   width: 100vw;
@@ -320,7 +331,7 @@ fieldset button {
   grid-template-columns: 1fr;
   grid-template-rows: 0.4fr 2fr 0.3fr; }
 
-/* line 332, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
+/* line 346, ../../../../../Desktop/Desarrollo Web/scss/_estructura.scss */
 .sobreNosotros {
   grid-area: sobreNosotros;
   width: 100%;
