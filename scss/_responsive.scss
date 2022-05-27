@@ -9,6 +9,21 @@
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr 0.2fr;
     }
+    
+    nav{
+
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 100%;
+        width: auto;
+    }
+
+    nav li {
+
+        display: flex;
+        margin-left: 40px;
+
+    }
 
     footer {
         width: 120%;
